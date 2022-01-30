@@ -1,0 +1,41 @@
+/*:root{*/
+/*    --blue:rgb(50, 138, 241);*/
+/*    --red:rgb(236, 69, 79);*/
+/*    --green:rgb(26, 171, 139);*/
+/*}*/
+/*.text-blue {*/
+/*    color: var(--blue);*/
+/*}*/
+
+/*.text-red {*/
+/*    color: var(--red);*/
+/*}*/
+
+/*.text-green {*/
+/*    color: var(--green);*/
+/*}*/
+
+/*!*light*!*/
+/*.text-blue-light {*/
+/*    color: rgba(50, 138, 241, 0.8);*/
+/*}*/
+
+/*.text-red-light {*/
+/*    color: rgba(236, 69, 79, 0.8);*/
+/*}*/
+
+/*.text-green-light {*/
+/*    color: rgba(26, 171, 139, 0.8);*/
+/*}*/
+/*!*extra light*!*/
+/*.text-blue-light-xs {*/
+/*    color: rgba(50, 138, 241, 0.5);*/
+/*}*/
+
+/*.text-red-light-xs {*/
+/*    color: rgba(236, 69, 79, 0.5);*/
+/*}*/
+
+/*.text-green-light-xs {*/
+/*    color: rgba(26, 171, 139, 0.5);*/
+/*}*/
