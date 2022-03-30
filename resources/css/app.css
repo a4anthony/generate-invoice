@@ -1,3 +1,34 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+@layer components {
+    .divider {
+        @apply mt-1 mb-2 block w-full h-px bg-gray-200;
+    }
+    .section-header-sm {
+        @apply text-sm-xs text-gray-600 font-bold uppercase;
+    }
+    .default-btn {
+        @apply inline-flex justify-center items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500;
+    }
+
+    /*forms*/
+    .form-label {
+        @apply block text-sm font-medium text-gray-700;
+    }
+    .form-input {
+        @apply mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md;
+    }
+    .form-select {
+        @apply mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm rounded-md;
+    }
+    .default-form-label {
+        @apply block font-bold text-xs text-gray-700 uppercase;
+    }
+    .default-form-input {
+        @apply mt-1 focus:bg-transparent focus:ring-gray-500 focus:border-gray-500 block w-full  sm:text-sm border-gray-100 bg-gray-50 rounded-md cursor-pointer;
+    }
+    .default-form-input[aria-readonly] {
+        @apply bg-red-100;
+    }
+}

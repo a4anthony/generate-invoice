@@ -2,12 +2,40 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Template;
 use Illuminate\Support\Facades\File;
+use Inertia\Inertia;
 use PDF;
 use Illuminate\Http\Request;
 
 class GeneratePdfController extends Controller
 {
+    /**
+     * @var \App\Models\Template
+     */
+    private $template;
+
+    /**
+     * @param \App\Models\Template $template
+     */
+    public function __construct(Template $template)
+    {
+        $this->template = $template;
+    }
+
+    /**
+     * Show generate invoice form
+     *
+     *
+     * @return \Inertia\Response
+     */
+    public function index(): \Inertia\Response
+    {
+        return Inertia::render('GenerateInvoice', [
+            'templates' => $this->template->all()
+        ]);
+    }
+
     public function generatePdf()
     {
         $data = [
